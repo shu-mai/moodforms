@@ -27,7 +27,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -36,7 +36,9 @@ body {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     backdrop-filter: blur(5px);
-  }
+    max-width: 90%;
+    width: 100%;
+  }  
   
   
   button {
@@ -64,15 +66,20 @@ body {
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
     border-color: transparent;
   }
-  
-  @media (max-width: 768px) {
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
     #controls {
       flex-wrap: wrap;
       max-width: 90%;
+      width: 100%;
     }
     
-    button {
+    #controls button {
+      flex: 0 0 calc(25% - 10px);
+      max-width: calc(25% - 10px);
       font-size: 12px;
-      padding: 8px 12px;
+      padding: 8px 6px;
+      margin-bottom: 10px;
     }
   }
