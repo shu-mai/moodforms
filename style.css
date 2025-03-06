@@ -40,7 +40,6 @@ body {
     width: 100%;
   }  
   
-  
   button {
     padding: 10px 15px;
     font-size: 14px;
@@ -66,8 +65,47 @@ body {
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
     border-color: transparent;
   }
-
-  /* for the phone */
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/* for the phone */
   @media (max-width: 768px) {
     #canvas-container {
       top: -10vh;
@@ -93,5 +131,4 @@ body {
       margin-bottom: 10px;
     }
   }
-  
   
