@@ -67,7 +67,6 @@ body {
     border-color: transparent;
   }
 
-/* Mobile-specific styles */
 @media (max-width: 768px) {
     #controls {
       flex-wrap: wrap;
@@ -76,10 +75,11 @@ body {
     }
     
     #controls button {
-      flex: 0 0 calc(25% - 10px);
-      max-width: calc(25% - 10px);
+      flex: 0 0 calc(50% - 10px);
+      max-width: calc(50% - 10px);
       font-size: 12px;
-      padding: 8px 6px;
+      padding: 8px 12px;
       margin-bottom: 10px;
     }
   }
+  
