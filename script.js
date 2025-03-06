@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   
     const angelMessages = {
-      '111': '111 New beginnings and manifestation',
-      '222': '222 Harmony and alignment',
-      '333': '333 Guidance and protection',
-      '444': '444 Stability and security',
-      '555': '555 Transformation and growth',
-      '666': '666 Self-reflection and balance',
-      '777': '777 Spiritual awakening and good fortune',
-      '888': '888 Abundance and infinite possibilities'
+      '111': 'OPPORTUNITY: New beginnings and manifestation',
+      '222': 'BALANCE: Harmony and alignment',
+      '333': 'SUPPORT: Guidance and protection',
+      '444': 'PROTECTION: Stability and security',
+      '555': 'CHANGE: Transformation and growth',
+      '666': 'REFLECTION: Self-reflection and balance',
+      '777': 'LUCK: Spiritual awakening and good fortune',
+      '888': 'ENERGY: Abundance and infinite possibilities'
     };
   
     const splineViewer = document.querySelector('spline-viewer');
